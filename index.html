@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International Brotherhood of Hoodsters - Local 4663</title>
+    <link rel="icon" href="IBHlogo.png" type="image/png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        .jacket {
+            max-width: min(420px, 70vw);
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+            user-select: none;
+        }
+
+        .jacket:hover {
+            transform: scale(1.03);
+        }
+
+        /* Launch mode: hover swaps label to Coming Soon; click does nothing */
+        button.join {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 32px;
+            background: #8b0000;
+            color: #d4af37;
+            padding: 16px 48px;
+            font-size: 20px;
+            font-family: 'Roboto Mono', monospace;
+            letter-spacing: 0.04em;
+            border: none;
+            cursor: pointer;
+            transition: background 0.2s ease;
+            min-width: 280px;
+        }
+
+        button.join:hover,
+        button.join:focus-visible {
+            background: #a00000;
+            outline: none;
+        }
+
+        button.join .label-soon {
+            display: none;
+        }
+
+        button.join:hover .label-default,
+        button.join:focus-visible .label-default {
+            display: none;
+        }
+
+        button.join:hover .label-soon,
+        button.join:focus-visible .label-soon {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <img src="IBHjacket.png" class="jacket" alt="Union Jacket">
+
+    <button type="button" class="join" aria-label="Join Local 4663 — Coming Soon">
+        <span class="label-default">JOIN LOCAL 4663</span>
+        <span class="label-soon">COMING SOON</span>
+    </button>
+
+    <script>
+        // Launch mode: button is visual only — no navigation
+        document.querySelector('.join').addEventListener('click', function (e) {
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>
