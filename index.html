@@ -40,7 +40,8 @@
             transform: scale(1.03);
         }
 
-        a.join {
+        /* Launch mode: hover swaps label to Coming Soon; click does nothing */
+        button.join {
             display: inline-flex;
             align-items: center;
             justify-content: center;
@@ -55,36 +56,42 @@
             cursor: pointer;
             transition: background 0.2s ease;
             min-width: 280px;
-            text-decoration: none;
-            text-align: center;
         }
 
-        a.join:hover,
-        a.join:focus-visible {
+        button.join:hover,
+        button.join:focus-visible {
             background: #a00000;
             outline: none;
+        }
+
+        button.join .label-soon {
+            display: none;
+        }
+
+        button.join:hover .label-default,
+        button.join:focus-visible .label-default {
+            display: none;
+        }
+
+        button.join:hover .label-soon,
+        button.join:focus-visible .label-soon {
+            display: inline;
         }
     </style>
 </head>
 <body>
     <img src="IBHjacket-20260721b.png" class="jacket" alt="Union Jacket">
 
-    <!-- Always use /pledge on this domain — never pledge.local4663.com -->
-    <a class="join" id="join-btn" href="https://local4663.com/pledge">
-        JOIN LOCAL 4663
-    </a>
+    <button type="button" class="join" aria-label="Join Local 4663 — Coming Soon">
+        <span class="label-default">JOIN LOCAL 4663</span>
+        <span class="label-soon">COMING SOON</span>
+    </button>
 
     <script>
-        (function () {
-            var btn = document.getElementById('join-btn');
-            if (!btn) return;
-            var target = 'https://local4663.com/pledge';
-            btn.setAttribute('href', target);
-            btn.addEventListener('click', function (e) {
-                e.preventDefault();
-                window.location.assign(target);
-            });
-        })();
+        // Launch mode: button is visual only — no navigation, no wallet
+        document.querySelector('.join').addEventListener('click', function (e) {
+            e.preventDefault();
+        });
     </script>
 </body>
 </html>

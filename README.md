@@ -6,20 +6,20 @@ Static site for the IBH Union Hall.
 
 | URL | Role |
 | --- | --- |
-| **https://local4663.com** | Landing — jacket + **JOIN LOCAL 4663** |
-| **https://local4663.com/pledge** | Airdrop / tribute — membership card + **PLEDGE TRIBUTE** |
+| **https://local4663.com** | Landing — jacket + **JOIN LOCAL 4663** (launch mode: hover → Coming Soon) |
+| **https://local4663.com/pledge** | Membership card — **PLEDGE TRIBUTE** (launch mode: no wallet) |
 | https://gibtogether.github.io/ibh/ | GitHub Pages fallback |
 
-Pledge lives in this repo only (`pledge/`). There is no separate pledge site or subdomain.
+**Launch mode (current):** no presale wallet, join/pledge buttons show **COMING SOON** on hover and do not navigate or copy addresses.
 
 ## Pages (this repo)
 
 | File | Role |
 | --- | --- |
-| `index.html` | Landing — jacket; join links to `/pledge` |
+| `index.html` | Landing — jacket; launch-mode join button |
 | `home.html` | Union Hall home — poster hero + logo |
-| `join.html` | Redirects to `/pledge` |
-| `pledge/index.html` | Tribute / airdrop enrollment |
+| `join.html` | Redirects to landing |
+| `pledge/index.html` | Membership card; launch-mode CTA (no wallet) |
 
 ## Assets
 
