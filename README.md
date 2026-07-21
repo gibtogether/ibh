@@ -2,17 +2,19 @@
 
 Static site for the IBH Union Hall.
 
-## Live site
+## Live sites
 
-**https://local4663.com**
+| URL | Role |
+| --- | --- |
+| **https://local4663.com** | Landing — jacket + **JOIN LOCAL 4663** |
+| **https://pledge.local4663.com** | Airdrop / tribute — membership card + **PLEDGE TRIBUTE** ([repo](https://github.com/gibtogether/pledge)) |
+| https://gibtogether.github.io/ibh/ | GitHub Pages fallback for landing |
 
-GitHub Pages fallback: https://gibtogether.github.io/ibh/
-
-## Pages
+## Pages (this repo)
 
 | File | Role |
 | --- | --- |
-| `index.html` | Landing — jacket + **JOIN LOCAL 4663** (launch mode: hover shows **COMING SOON**) |
+| `index.html` | Landing — jacket; join links to `pledge.local4663.com` |
 | `home.html` | Union Hall home — poster hero + logo |
 
 ## Assets
