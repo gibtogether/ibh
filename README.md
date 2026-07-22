@@ -8,11 +8,12 @@ Static site for Local 4663 (GitHub Pages → **local4663.com**).
 | --- | --- |
 | **https://local4663.com** | Landing — jacket + **JOIN LOCAL 4663** (launch mode: hover → Coming Soon) |
 | **https://local4663.com/pledge** | Membership card — **PLEDGE TRIBUTE** (launch mode: no wallet) |
+| **https://local4663.com/books** | Easter egg — Union Books sealed / hall coming soon (unlinked) |
 | https://buildtogetherlabs.github.io/ibh/ | GitHub Pages fallback |
 
 **Launch mode (current):** no presale wallet; join/pledge buttons show **COMING SOON** on hover and do not navigate or copy addresses.
 
-The **Union Hall product app** lives in the private repo `buildtogetherlabs/union-hall` and is **not** published on this site.
+The full **Union Books / Hall product app** lives in the private repo `buildtogetherlabs/union-hall` and is **not** published on this site. Public `/books` is only a coming-soon notice (easter egg — not linked from the landing).
 
 ## Pages (this repo)
 
@@ -22,6 +23,7 @@ The **Union Hall product app** lives in the private repo `buildtogetherlabs/unio
 | `home.html` | Poster hero + logo (legacy home) |
 | `join.html` | Redirects to landing |
 | `pledge/index.html` | Membership card; launch-mode CTA (no wallet) |
+| `books/index.html` | Easter egg — Form 4663-B hall status; books sealed until launch |
 
 ## Assets
 
@@ -47,4 +49,4 @@ The **Union Hall product app** lives in the private repo `buildtogetherlabs/unio
 python3 -m http.server 8080
 ```
 
-Then visit http://localhost:8080 and http://localhost:8080/pledge
+Then visit http://localhost:8080, http://localhost:8080/pledge, and http://localhost:8080/books
