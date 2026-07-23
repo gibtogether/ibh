@@ -31,10 +31,12 @@ The full **Union Books / Hall product app** lives in the private repo `buildtoge
 | --- | --- |
 | `IBHjacket.png` / `IBHjacket-20260721b.png` | Landing center image |
 | `IBHposter.png` | Home page hero |
-| `IBHlogo.png` | Site logo + favicon |
+| `HoodstersLogoWhite.png` | Site logo + favicon (circle on white; all pages) |
+| `IBHlogo.png` | Same as white logo (legacy filename) |
+| `IBHlogoGreen.png` | Green-square logo — **profile images only** |
 | `IBHjacketrear.png` | Jacket rear (reserved) |
 | `IBHmembercard.png` | Membership card (pledge page) |
-| `pledge/IBHlogo.png` | Pledge page logo |
+| `pledge/HoodstersLogoWhite.png` | Pledge favicon |
 | `pledge/IBHmembercard.png` | Pledge page card |
 
 ## Workflow
