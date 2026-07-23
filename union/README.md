@@ -1,7 +1,10 @@
 # Union Books — product preview
 
-Static mirror of the private `union-hall` app for GitHub Pages preview.
+Static mirror of the private `union-hall` app.
 
-**URL:** https://local4663.com/union/
+**Preview URL (use this):**  
+https://buildtogetherlabs.github.io/ibh/union/
 
-This is mock-data only (no wallet / no chain). Launch-mode public site remains at `/`.
+**Not on the marketing domain:**  
+https://local4663.com/union/ redirects home (`js/preview-host.js`).  
+Public launch surface stays at https://local4663.com/
