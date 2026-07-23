@@ -9,7 +9,7 @@ Static site for Local 4663 (GitHub Pages → **local4663.com**).
 | **https://local4663.com** | Landing — jacket + **JOIN LOCAL 4663** (launch mode: hover → Coming Soon) |
 | **https://local4663.com/pledge** | Membership card — **PLEDGE TRIBUTE** (launch mode: no wallet) |
 | **https://local4663.com/books** | Easter egg — sealed notice (unlinked) |
-| **https://buildtogetherlabs.github.io/union-hall/** | **Product preview** — full Union Books UI |
+| **https://buildtogetherlabs.github.io/union-hall-preview/** | **Product preview** — full Union Books UI |
 | https://buildtogetherlabs.github.io/ibh/ | GitHub Pages fallback |
 
 **Launch mode (current):** public landing/pledge show **COMING SOON** on hover (no wallet).
